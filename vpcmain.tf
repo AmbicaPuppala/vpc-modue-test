@@ -1,5 +1,6 @@
 module "vpc"{
-    source = "../tf-aws-vpc"
+    # source = "../tf-aws-vpc"
+    source = "git::https://github.com/AmbicaPuppala/tf-aws-vpc.git?ref=main"
     project = var.project
     environment = var.environment
     vpc_cidr= var.vpc_cidr
